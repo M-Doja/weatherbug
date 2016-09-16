@@ -102,6 +102,7 @@ ul{margin:0 auto;}
   padding-bottom: 25px;
   display: inline-block;
 }
+#srcBtn{border-radius: .15em;}
 .hideBtn {margin-bottom: 1.5em;display: inline-block;
   /*color:#23527c;*/
   color:#fff;
