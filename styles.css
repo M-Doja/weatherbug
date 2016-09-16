@@ -106,7 +106,9 @@ ul{margin:0 auto;}
   /*color:#23527c;*/
   color:#fff;
 }
-#displayHideBtn{margin-top: 1em;border-radius: .5em; background: #aaa;color:#fff;}
+#displayHideBtn {margin-top: 1em;}
+#displayHideBtn,
+#forecastHideBtn{border-radius: .5em; background: #aaa;color:#fff;}
 #clearBtn{margin-bottom: 2em;}
 
 .last {margin-bottom: -20px;}

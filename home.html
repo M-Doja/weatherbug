@@ -129,7 +129,7 @@
 									htmlForecast += ' High: '+weather.forecast[i].high+'<br>Low: '+weather.forecast[i].low+'<br>' +weather.forecast[i].text+' </p><br>';
 					      }
 								// LOCATION CLEAR BTN
-								 htmlForecast += '<button class="hideBtn" data-toggle="collapse" data-target="#forecastHere">Close Forecast</button><br><button type="button" id="clearBtn" onclick="clearData()">Clear Location</button><br><br><span style="color:#000;background:rgba(255,255,255,0.3);border-radius:5px;padding:2px;margin-bottom:3px;">Powered by </span><br><a class="hideBtn" href="http://simpleweatherjs.com/" target="_blank"> simpleWeather</a>';
+								 htmlForecast += '<button class="hideBtn" id="forecastHideBtn" data-toggle="collapse" data-target="#forecastHere">Close Forecast</button><br><button type="button" id="clearBtn" onclick="clearData()">Clear Location</button><br><br><span style="color:#000;background:rgba(255,255,255,0.3);border-radius:5px;padding:2px;margin-bottom:3px;">Powered by </span><br><a class="hideBtn" href="http://simpleweatherjs.com/" target="_blank"> simpleWeather</a>';
 								 html = sunMoon +'<br>'+ html;
 					      $("#weather").html(html);
 								$("#forecastHere").html(htmlForecast);
