@@ -108,10 +108,11 @@ ul{margin:0 auto;}
 }
 #displayHideBtn {margin-top: 1em;}
 #displayHideBtn,
-#forecastHideBtn{border-radius: .5em; background: #aaa;color:#fff;}
+#forecastHideBtn{border-radius: .5em; background: #aaa;color:#fff;outline: none;}
 #clearBtn{margin-bottom: 2em;}
 
 .last {margin-bottom: -20px;}
+#clearBtn{border-radius: .5em; background: #aaa;}
 /*===========================*/
 
 /*SET LOCATION INPUT*/
