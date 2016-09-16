@@ -102,7 +102,7 @@ ul{margin:0 auto;}
   padding-bottom: 25px;
   display: inline-block;
 }
-#srcBtn{border-radius: .15em;}
+#srcBtn{border-radius: .25em;background: rgb(152, 54, 54);}
 .hideBtn {margin-bottom: 1.5em;display: inline-block;
   /*color:#23527c;*/
   color:#fff;
