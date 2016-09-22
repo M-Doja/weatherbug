@@ -2,48 +2,36 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="A simple HTML5, CSS3, and JavaScript local weather dashboard powered by the simpleWeather JS API">
+		<meta name="keywords" content="HTML5,CSS,simpleWeather,JavaScript">
+		<meta name="author" content="Micah Dunson">
 		<title>Local WeatherBug</title>
 		<link rel="shortcut icon" href="img/WeatherBug.png" />
-		<!-- The main CSS file -->
 		<link href="styles.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="styles.css">
 		<style media="screen">
-			#temp {
-				margin-top: 0px;
-				margin-bottom: -35px;
-				margin-left:-40px;
-				dislay: inline-block;
-				color:rgb(247, 255, 89);
-				color:yellow;
-			}
-			@media (min-width:1200px){
-			  #temp {margin-top:-40px;}
-			}
-			@media (min-width:300px){
-			  /*#temp {margin-left:95px;}*/
-			}
+			#temp {margin-top: 0px;margin-bottom: -35px;
+				margin-left:-40px;dislay: inline-block;
+				color:rgb(247, 255, 89);color:yellow;}
+			@media (min-width:1200px){#temp {margin-top:-40px;}}
 		</style>
 	</head>
 	<body style="text-align:center;padding-top:6%;" class="">
-
 		<div class="outerWrap">
 			<img id="bug" width="25" src="img/WeatherBug.png" />
 			<span style="color:#fff;font-size:1.4em;"><b>Local WeatherBug</b></span><br>
-
 			<div class="container wrap">
 
-				<!-- init form if not city selected -->
 				<form class="" id="getLoc">
 					<button data-toggle="collapse" id="srcBtn"data-target="#demo" type="button" name="button" ><b style="color:#000;">Select A Location To Check Weather</b></button>
 				</form>
 
 				<!-- clock in right corner -->
 				<span id='time'></span>
-
 				<!-- weather display div -->
 				<div id="weather"></div>
-
 				<!-- time display div -->
 				<span id='timeblock'></span>
 
@@ -63,7 +51,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://cdn.rawgit.com/monkeecreate/jquery.simpleWeather/master/jquery.simpleWeather.min.js"></script>
-		<script src="app.js" charset="utf-8"></script>
 		<script type="text/javascript">
 
 			function sunnyClass(){
@@ -87,7 +74,6 @@
 			function nightClass(){
 			  document.body.setAttribute('class', 'night');
 			}
-
 
 		$(document).ready(function() {
 				getWeather(); //Get the initial weather.
@@ -113,7 +99,6 @@
 						var loc = localStorage.getItem('userLocation');
 						$loc.val(loc);
 					}
-
 					var loc = $loc.val();
 				  localStorage.setItem('userLocation', loc)
 					$.simpleWeather({
