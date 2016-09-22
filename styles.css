@@ -1,9 +1,4 @@
 html{height:1000px;}
-.cloudy,.night,.ptCloudy,.rain,.thunder,.windy{
-  background-repeat: no-repeat;
-  background-size: 99.9997%;
-  background-attachment: fixed;
-}
 .cloudy{
   /*CLOUDY theme*/
   background-image: url('img/cloudy.jpg');
@@ -32,13 +27,17 @@ html{height:1000px;}
   /*CLOUDY theme*/
   background-image: url('img/windy.jpg');
 }
+.cloudy, .night, .ptCloudy, .rain, .thunder, .windy {
+  background-repeat: no-repeat;
+  background-size: 99.9997%;
+  background-attachment: fixed;
+}
 
 
 body {
   text-align: center;
   padding: 5em 1em;
 
-<<<<<<< HEAD
     /*CLOUDY theme*/
   /*background-image: url('img/windy.jpg');*/
 
