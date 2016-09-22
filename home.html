@@ -16,6 +16,9 @@
 				color:rgb(247, 255, 89);
 				color:yellow;
 			}
+			/*body {
+				background-image: url('img/sunny.jpg');
+			}*/
 			@media (min-width:1200px){
 			  #temp {margin-top:-40px;}
 			}
@@ -61,9 +64,33 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://cdn.rawgit.com/monkeecreate/jquery.simpleWeather/master/jquery.simpleWeather.min.js"></script>
+		<script src="app.js" charset="utf-8"></script>
 		<script type="text/javascript">
 
 		$(document).ready(function() {
+
+			function sunnyClass(){
+			  document.body.setAttribute('class', 'sunny');
+			}
+			function rainClass(){
+			  document.body.setAttribute('class', 'rain');
+			}
+			function cloudyClass(){
+			  document.body.setAttribute('class', 'cloudy');
+			}
+			function ptCloudyClass(){
+			  document.body.setAttribute('class', 'ptCloudy');
+			}
+			function thunderClass(){
+			  document.body.setAttribute('class', 'thunder');
+			}
+			function windyClass(){
+			  document.body.setAttribute('class', 'windy');
+			}
+			function nightClass(){
+			  document.body.setAttribute('class', 'night');
+			}
+
 				getWeather(); //Get the initial weather.
 				setInterval(getWeather, 600000); //Update the weather every 10 minutes.
 				});
@@ -115,7 +142,39 @@
 
 								// WEATHER CONDITION DATA
 					      htmlForecast += '<li class="currently">'+weather.currently+" ";
-
+								console.log(weather.currently);
+								switch (weather.currently){
+									case 'Mostly Sunny':
+									 sunnyClass();
+									 alert('Looking mostly sunny');
+									 break;
+									case 'Sunny':
+ 									 sunnyClass();
+ 									 alert('Looking sunny');
+ 									 break;
+									case 'Breezy':
+ 									 windyClass();
+ 									 alert('Feeling windy');
+ 									 break;
+									case 'Partly Cloudy':
+ 									 ptCloudyClass();
+ 									 alert('Looking partly cloudy');
+ 									 break;
+									case 'Showers':
+ 									 rainClass();
+ 									 alert('Looks like showers');
+ 									 break;
+									case "Mostly Cloudy":
+ 									 cloudyClass();
+ 									 alert("It's mostly cloudy");
+ 									 break;
+									case "Cloudy":
+									 cloudyClass();
+									 alert("It's cloudy");
+									 break;
+									default:
+									nightClass();
+								}
 								// WEATHER TEMP DATA
 					      htmlForecast += weather.alt.temp+'&deg;C</li></ul><br>';
 
