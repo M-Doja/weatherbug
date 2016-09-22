@@ -91,6 +91,10 @@
 			  document.body.setAttribute('class', 'night');
 			}
 
+
+		<script type="text/javascript">
+
+		$(document).ready(function() {
 				getWeather(); //Get the initial weather.
 				setInterval(getWeather, 600000); //Update the weather every 10 minutes.
 				});
@@ -175,6 +179,7 @@
 									default:
 									nightClass();
 								}
+
 								// WEATHER TEMP DATA
 					      htmlForecast += weather.alt.temp+'&deg;C</li></ul><br>';
 

@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 html{height:1000px;}
 .cloudy,.night,.ptCloudy,.rain,.thunder,.windy{
   background-repeat: no-repeat;
   background-size: 99.9997%;
   background-attachment: fixed;
 }
+=======
+>>>>>>> 7c4edf244b260f1c197652687c6316cf0186fd48
 .cloudy{
   /*CLOUDY theme*/
   background-image: url('img/cloudy.jpg');
@@ -38,8 +41,17 @@ body {
   text-align: center;
   padding: 5em 1em;
 
+<<<<<<< HEAD
     /*CLOUDY theme*/
   /*background-image: url('img/windy.jpg');*/
+=======
+
+
+
+    /*CLOUDY theme*/
+  /*background-image: url('img/windy.jpg');*/
+
+>>>>>>> 7c4edf244b260f1c197652687c6316cf0186fd48
   background-repeat: no-repeat;
   background-size: 99.9997%;
   background-attachment: fixed;
@@ -48,10 +60,17 @@ body {
   /*background: rgb(9, 167, 1);*/
   /*background: rgb(44, 204, 117)*/
   /*background: rgb(46, 138, 23)*/
+<<<<<<< HEAD
   /*background: rgb(57, 145, 127);*/
   background-color:#000
 }
 ul{margin:0 auto;}
+=======
+  background: rgb(57, 145, 127);
+}
+ul{margin:0 auto;}
+
+>>>>>>> 7c4edf244b260f1c197652687c6316cf0186fd48
 /*CITY FORM LAYOUT*/
 #LOC {border-radius: .35em;text-align: center;margin-bottom: .9em;margin-top: -100px;}
 
