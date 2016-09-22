@@ -67,8 +67,6 @@
 		<script src="app.js" charset="utf-8"></script>
 		<script type="text/javascript">
 
-		$(document).ready(function() {
-
 			function sunnyClass(){
 			  document.body.setAttribute('class', 'sunny');
 			}
@@ -148,31 +146,31 @@
 								switch (weather.currently){
 									case 'Mostly Sunny':
 									 sunnyClass();
-									 alert('Looking mostly sunny');
+									//  alert('Looking mostly sunny');
 									 break;
 									case 'Sunny':
  									 sunnyClass();
- 									 alert('Looking sunny');
+ 								// 	 alert('Looking sunny');
  									 break;
 									case 'Breezy':
  									 windyClass();
- 									 alert('Feeling windy');
+ 								// 	 alert('Feeling windy');
  									 break;
 									case 'Partly Cloudy':
  									 ptCloudyClass();
- 									 alert('Looking partly cloudy');
+ 								// 	 alert('Looking partly cloudy');
  									 break;
 									case 'Showers':
  									 rainClass();
- 									 alert('Looks like showers');
+ 								// 	 alert('Looks like showers');
  									 break;
 									case "Mostly Cloudy":
  									 cloudyClass();
- 									 alert("It's mostly cloudy");
+ 								// 	 alert("It's mostly cloudy");
  									 break;
 									case "Cloudy":
 									 cloudyClass();
-									 alert("It's cloudy");
+									//  alert("It's cloudy");
 									 break;
 									default:
 									nightClass();
@@ -232,7 +230,6 @@
 			}
 			getTime();
 			setInterval(getTime, 1000);
-
 		</script>
 	</body>
 </html>
