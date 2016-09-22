@@ -32,7 +32,7 @@ html{height:100%;}
   background-size: 99.9997%;
   background-attachment: fixed;
 }
-
+#bug{margin-left:-70px; margin-right:20%;margin-top:-20px;}
 
 body {
   text-align: center;
